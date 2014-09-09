@@ -1,0 +1,112 @@
+/* Menu */
+.list-group, .list-group-item:first-child, .list-group-item:last-child
+{
+	border-radius: 0px;
+}
+
+.list-group-item
+{
+	border-right: 0px;
+}
+
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus
+{
+	background-color: #9e9595;
+	background-image: -webkit-linear-gradient(top,#b2abab 0,#9e9595 100%);
+	text-shadow: none;
+}
+
+.list-group-item.active
+{
+	border-color: grey;
+}
+
+
+/* Pages */
+.panel
+{
+	border-radius: 0px;
+}
+
+.panel-body
+{
+	height: 100%;
+	position: relative;
+	padding: 0px;
+}
+
+
+.page
+{
+	display: none;
+	width: 100%;
+	/*height: auto;
+	/*position: absolute;*/
+}
+
+
+.page.active
+{
+	display: inline-block;
+}
+
+/* Forms */
+#geometry-page
+{
+	width: 740px;
+	height: 985px;
+	background-image: url('../images/transporter_geometry.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.form-control
+{
+	margin-bottom: 5px;
+	max-width: 200px;
+}
+
+.heightUpTransporter
+{
+	-moz-transform: translate(500px, 300px); /* Для Firefox */
+    -ms-transform: translate(500px, 300px); /* Для IE */
+    -webkit-transform: translate(500px, 300px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(500px, 300px); /* Для Opera */
+    transform: translate(500px, 300px);
+    width: 160px;
+}
+
+.lenghTransporter
+{
+	-moz-transform: translate(150px, 170px); /* Для Firefox */
+    -ms-transform: translate(150px, 170px); /* Для IE */
+    -webkit-transform: translate(150px, 170px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(150px, 170px); /* Для Opera */
+    transform: translate(150px, 170px);
+    width: 160px;
+}
+
+.xTransporter
+{
+	-moz-transform: translate(200px, 390px); /* Для Firefox */
+    -ms-transform: translate(200px, 390px); /* Для IE */
+    -webkit-transform: translate(200px, 390px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(200px, 390px); /* Для Opera */
+    transform: translate(200px, 390px);
+    width: 200px;
+}
+
+.angleTransporter
+{
+	-moz-transform: translate(240px, 250px); /* Для Firefox */
+    -ms-transform: translate(240px, 250px); /* Для IE */
+    -webkit-transform: translate(240px, 250px); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(240px, 250px); /* Для Opera */
+    transform: translate(240px, 250px);
+    width: 130px;
+}
+
+.control-button
+{
+    margin-top: 400px;
+}

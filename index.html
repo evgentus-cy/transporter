@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="./css/bootstrap.css">
+		<link rel="stylesheet" href="./css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="./css/calculators.style.css">
+		
+		<script type="text/javascript" src="./js/calculators.js"></script>
+		<script src="./js/jquery-1.11.1.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script type="text/javascript" src="./js/calculators.style.js"></script>
+		
+		<title>Калькулятор конвейреа</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sx-4 col-md-4 col-lg-4" style="padding-right: 0px;">
+					<div class="list-group">
+  						<a href="#" class="list-group-item active" id="geometry">Геометрические параметры конвейера</a>
+  						<a href="#" class="list-group-item" id="power">Расчет мощности конвейера</a>
+  						<a href="#" class="list-group-item" id="volume">Объем насыпи кругового конвейера</a>
+  						<a href="#" class="list-group-item" id="speed">Максимальная скорость работы конвейера</a>
+					</div>
+				</div>
+				<div class="col-sx-8 col-md-8 col-lg-8 panel panel-default">
+					<div class="panel-body">
+						<div class="page active" id="geometry-page">
+							<form>
+								<div class="form-group">
+    								<input type="text" class="form-control heightUpTransporter" placeholder="Высота подъема(м)" name="heightUpTransporter">
+    								<input type="text" class="form-control lenghTransporter" placeholder="Длинна по трассе(м)" name="lenghTransporter">
+    								<input type="text" class="form-control xTransporter" placeholder="Длинна по горизонтали(м)" name="xTransporter">
+    								<input type="text" class="form-control angleTransporter" placeholder="Угол подъема&deg;" name="angleTransporter">
+									<!--<div class="angle-convert">
+										<span><input type="radio" name="angle" value="rad">Радианы</span>
+										<span><input type="radio" name="angle" value="grad">Градусы</span>
+									</div>-->
+  								</div>
+  								<div class="control-button">
+  									<button type="button" class="btn btn-default btn-go">Расчет</button>
+  									<input type="reset" class="btn btn-default" value="Сброс">
+  									<button type="button" class="btn btn-default btn-reset">Очистить память</button>
+  									<a class="btn btn-default" href="#" data-toggle="modal" data-target="#getStorage">Содержимое памяти</a>
+  								</div>
+
+							</form>
+						</div>
+
+						<div class="page" id="power-page">
+							<p>мощность</p>
+						</div>
+
+						<div class="page" id="volume-page">
+							<p>объем</p>
+						</div>
+
+						<div class="page" id="speed-page">
+							<p>скорость</p>
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="getStorage" tabindex="-1" role="dialog">
+     					<div class="modal-dialog">
+       					<div class="modal-content">
+          					<div class="modal-header"><button class="close" type="button" data-dismiss="modal">x</button>
+             					<h4 class="modal-title" id="myModalLabel">Содержимое памяти</h4>
+          					</div>
+        					<div class="modal-body">
+          					
+        					</div>
+       					<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+          					<button class="btn btn-primary" type="button">Сохранить изменения</button></div>
+    					</div>
+  					</div>
+					</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>
